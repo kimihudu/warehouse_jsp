@@ -22,9 +22,8 @@
                     <span class="menu-arrow arrow_carrot-right"></span>
                 </a>
                 <ul class="sub">
-                    <li><a class="" href="table_product.html">Product Table</a></li>
-                    <li><a class="" href="add_product.html">Add Product</a></li>                          
-                    <li><a class="" href="edit_product.html">Edit Product</a></li>
+                    <li><a class="" href="./Home?action=prodList">Product Table</a></li>
+                    <li><a class="" href="./Home?action=insert"/>"Add Product</a></li>
                 </ul>
             </li>       
             <li class="sub-menu">
