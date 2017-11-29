@@ -4,6 +4,7 @@
     Author     : GeorgyGeo
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,22 +19,7 @@
         <link rel="shortcut icon" href="img/favicon.png">
 
         <title>Form Component | Creative - Bootstrap 3 Responsive Admin Template</title>
-
-        <!-- Bootstrap CSS -->    
-        <link href="./template/css/bootstrap.min.css" rel="stylesheet">
-        <!-- bootstrap theme -->
-        <link href="./template/css/bootstrap-theme.css" rel="stylesheet">
-        <!--external css-->
-        <!-- font icon -->
-        <link href="./template/css/elegant-icons-style.css" rel="stylesheet" />
-        <link href="./template/css/font-awesome.min.css" rel="stylesheet" />
-        <!-- date picker -->
-
-        <!-- color picker -->
-
-        <!-- Custom styles -->
-        <link href="./template/css/style.css" rel="stylesheet">
-        <link href="./template/css/style-responsive.css" rel="stylesheet" />
+        <jsp:include page="./common/cssSection.jsp"/>
     </head>
     <body>
         <jsp:include page="./common/headerSection.jsp"/>
@@ -46,49 +32,56 @@
                         <ol class="breadcrumb">
                             <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
                             <li><i class="icon_document_alt"></i>Product</li>
-                            <li><i class="fa fa-file-text-o"></i>Product Table</li>
+                            <li><i class="fa fa-file-text-o"></i>Edit Product</li>
                         </ol>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-7">
                         <section class="panel">
-                            <!-- <header class="panel-heading" >
-                                Product Table
-                            </header> -->
-
-                            <table class="table table-striped table-advance table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Product ID</th>
-                                        <th>Product Category</th>
-                                        <th>Sub Category</th>
-                                        <th>Unit Price</th>
-                                        <th>Image Product</th>
-                                        <th>Add/Save/Remove</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <c:forEach items="${users}" var="user">
-                                    <tr>
-                                        <td><c:out value="${user.id}" /></td>
-                                    <td><c:out value="${user.name}" /></td>
-                                    <td><c:out value="${user.email}" /></td>
-                                    <td><c:out value="${user.type}" /></td>
-                                    <td>
-                                        <div class="btn-group">
-                                            <a class="btn btn-success" href="UserController?action=edit&userId=<c:out value="${user.id}"/>"><i class="icon_check_alt2"></i></a>
-                                            <a class="btn btn-danger" href="UserController?action=delete&userId=<c:out value="${user.id}"/>"><i class="icon_close_alt2"></i></a>
+                            <header class="panel-heading">
+                                Edit Product
+                            </header>
+                            <div class="panel-body">
+                                <form role="form" method="POST" action="Home">
+                                    <div class="form-group">
+                                        <label>Product ID</label>
+                                        <input type="input" class="form-control" id="row_id" placeholder="Product Id" value="<c:out value="${prod.rowID}" />">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Product Category</label>
+                                        <select name="product_category" class="form-control">
+                                            <option value="Technology">Technology</option>
+                                            <option value="Office Supplies">Office Supplies</option>
+                                            <option value="Furniture">Furniture</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Sub Category</label>
+                                        <input type="input" class="form-control" id="sub_catgry" placeholder="Sub-category" value="<c:out value="${prod.subProdCat}" />">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Product Name</label>
+                                        <input type="input" class="form-control" id="prod_name" placeholder="Product Name" value="<c:out value="${prod.prodName}" />">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Unit Price</label>
+                                        <input type="input" class="form-control" id="unit_price" placeholder="Unit price" value="<c:out value="${prod.unitPrice}" />">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Product Image</label>
+                                        <input type="file" class="form-control" id="prod_img" accept="image/*">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-lg-offset-0 colg-lg-10">
+                                            <input type="submit" class="btn btn-danger" value="Submit"/>
                                         </div>
-                                    </td>
-                                    </tr>
-                                </c:forEach>
-                                </tbody>
-                            </table>
-                        </section>
+                                    </div>
+                                </form>
+                            </div>
+
                     </div>
-                </div>
-                <!-- page end-->
+                    <!-- page end-->
             </section>
         </section>
         <jsp:include page="./common/footerSection.jsp"/>

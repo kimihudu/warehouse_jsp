@@ -21,21 +21,7 @@
 
         <title>Form Component | Creative - Bootstrap 3 Responsive Admin Template</title>
 
-        <!-- Bootstrap CSS -->    
-        <link href="./template/css/bootstrap.min.css" rel="stylesheet">
-        <!-- bootstrap theme -->
-        <link href="./template/css/bootstrap-theme.css" rel="stylesheet">
-        <!--external css-->
-        <!-- font icon -->
-        <link href="./template/css/elegant-icons-style.css" rel="stylesheet" />
-        <link href="./template/css/font-awesome.min.css" rel="stylesheet" />
-        <!-- date picker -->
-
-        <!-- color picker -->
-
-        <!-- Custom styles -->
-        <link href="./template/css/style.css" rel="stylesheet">
-        <link href="./template/css/style-responsive.css" rel="stylesheet" />
+        <jsp:include page="./common/cssSection.jsp"/>
     </head>
     <body>
 
@@ -96,13 +82,5 @@
     </section>
     <jsp:include page="./common/footerSection.jsp"/>
     <jsp:include page="./common/scriptSection.jsp"/>
-    <script>
-        // init bootpag
-        $('#page-selection').bootpag({
-            total: 10
-        }).on("page", function (event, /* page number here */ num) {
-            $("#content").html(); // some ajax content loading...
-        });
-    </script>
 </body>
 </html>
