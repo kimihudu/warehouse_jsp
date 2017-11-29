@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-        <title>Show All products</title>
+        <title>Show All User</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
@@ -45,8 +45,8 @@
                         <h3 class="page-header"><i class="fa fa-file-text-o"></i> Form elements</h3>
                         <ol class="breadcrumb">
                             <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-                            <li><i class="icon_document_alt"></i>Product</li>
-                            <li><i class="fa fa-file-text-o"></i>Product Table</li>
+                            <li><i class="icon_document_alt"></i>User</li>
+                            <li><i class="fa fa-file-text-o"></i>User List</li>
                         </ol>
                     </div>
                 </div>
@@ -60,12 +60,11 @@
                             <table class="table table-striped table-advance table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Product ID</th>
-                                        <th>Product Category</th>
-                                        <th>Sub Category</th>
-                                        <th>Unit Price</th>
-                                        <th>Image Product</th>
-                                        <th>Add/Save/Remove</th>
+                                        <th>User ID</th>
+                                        <th>User Name</th>
+                                        <th>Email ID</th>
+                                        <th>Type</th>
+                                        <th>Edit/Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -77,8 +76,10 @@
                                     <td><c:out value="${user.type}" /></td>
                                     <td>
                                         <div class="btn-group">
-                                            <a class="btn btn-success" href="UserController?action=edit&userId=<c:out value="${user.id}"/>"><i class="icon_check_alt2"></i></a>
-                                            <a class="btn btn-danger" href="UserController?action=delete&userId=<c:out value="${user.id}"/>"><i class="icon_close_alt2"></i></a>
+                                            <a class="btn btn-success" href="UserController?action=edit&userId=<c:out value='${user.id}'/>"><i class="icon_check_alt2"></i></a>
+                                            <a class="btn btn-danger" href="UserController?action=delete&userId=<c:out value='${user.id}'/>"><i class="icon_close_alt2"></i></a>
+                                            
+        
                                         </div>
                                     </td>
                                     </tr>

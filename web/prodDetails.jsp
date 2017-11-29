@@ -32,7 +32,7 @@
                         <ol class="breadcrumb">
                             <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
                             <li><i class="icon_document_alt"></i>Product</li>
-                            <li><i class="fa fa-file-text-o"></i>Edit Product</li>
+                            <li><i class="fa fa-file-text-o"></i>Product Detail</li>
                         </ol>
                     </div>
                 </div>
