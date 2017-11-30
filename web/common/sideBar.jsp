@@ -22,8 +22,8 @@
                     <span class="menu-arrow arrow_carrot-right"></span>
                 </a>
                 <ul class="sub">
-                    <li><a class="" href="./Home?action=prodList">Product Table</a></li>
-                    <li><a class="" href="./Home?action=insert"/>"Add Product</a></li>
+                    <li><a class="" href="./Home?action=prodList">Product List</a></li>
+                    <li><a class="" href="./Home?action=edit">Product Detail</a></li>
                 </ul>
             </li>       
             <li class="sub-menu">
@@ -33,21 +33,21 @@
                     <span class="menu-arrow arrow_carrot-right"></span>
                 </a>
                 <ul class="sub">
-                    <li><a class="" href="table_shipping.html">Shipping Table</a></li>
-                    <li><a class="" href="add_shipping.html">Add Shipping</a></li>
+                    <li><a class="" href="./Home?action=shipList">Shipping List</a></li>
+                    <li><a class="" href="./Home?action=edit">Shipping Detail</a></li>
                     <!-- <li><a class="" href="grids.html">Grids</a></li> -->
                 </ul>
             </li> 
             <li class="sub-menu">
                 <a href="javascript:;" class="">
                     <i class="icon_documents_alt"></i>
-                    <span>Admin Profile</span>
+                    <span>User</span>
                     <span class="menu-arrow arrow_carrot-right"></span>
                 </a>
                 <ul class="sub">                          
-                    <li><a class="" href="profile.html">Profile</a></li>
-                    <li><a class="" href="login.html"><span>Login Page</span></a></li>
-                    <li><a class="" href="add_admin.html">Add New</a></li>
+                    <li><a class="" href="./UserController?action=userList">Profile</a></li>
+                    <!--<li><a class="" href="./UserController?action="><span>Login Page</span></a></li>-->
+                    <li><a class="" href="./UserController?action=edit">Add New</a></li>
                     <!--<li><a class="" href="404.html">404 Error</a></li> -->
                 </ul>
             </li>

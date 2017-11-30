@@ -28,10 +28,10 @@
 
     <div class="top-nav notification-row">                
         <!-- notificatoin dropdown start-->
-        <ul class="nav pull-right top-menu">
+       <!-- <ul class="nav pull-right top-menu">
 
             <!-- task notificatoin start -->
-            <li id="task_notificatoin_bar" class="dropdown">
+            <!-- <li id="task_notificatoin_bar" class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                     <i class="icon-task-l"></i>
                     <span class="badge bg-important">6</span>
@@ -113,10 +113,10 @@
                         <a href="#">See All Tasks</a>
                     </li>
                 </ul>
-            </li>
+            </li> -->
             <!-- task notificatoin end -->
             <!-- inbox notificatoin start-->
-            <li id="mail_notificatoin_bar" class="dropdown">
+            <!--<li id="mail_notificatoin_bar" class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                     <i class="icon-envelope-l"></i>
                     <span class="badge bg-important">5</span>
@@ -178,10 +178,10 @@
                         <a href="#">See all messages</a>
                     </li>
                 </ul>
-            </li>
+            </li>-->
             <!-- inbox notificatoin end -->
             <!-- alert notification start-->
-            <li id="alert_notificatoin_bar" class="dropdown">
+            <!--<li id="alert_notificatoin_bar" class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
 
                     <i class="icon-bell-l"></i>
@@ -224,10 +224,10 @@
                         <a href="#">See all notifications</a>
                     </li>
                 </ul>
-            </li>
+            </li> -->
             <!-- alert notification end-->
             <!-- user login dropdown start-->
-            <li class="dropdown">
+           <!-- <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                     <span class="profile-ava">
                         <img alt="" src="img/avatar1_small.jpg">
@@ -259,7 +259,7 @@
                         <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
                     </li>
                 </ul>
-            </li>
+            </li> -->
             <!-- user login dropdown end -->
         </ul>
         <!-- notificatoin dropdown end-->
