@@ -19,7 +19,7 @@
         <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
         <link rel="shortcut icon" href="img/favicon.png">
 
-        <title>Form Component | Creative - Bootstrap 3 Responsive Admin Template</title>
+        <title>Shipping List</title>
         <jsp:include page="./common/cssSection.jsp"/>
     </head>
     <body>
@@ -29,7 +29,7 @@
             <section class="wrapper">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h3 class="page-header"><i class="fa fa-file-text-o"></i> Form elements</h3>
+                        <h3 class="page-header"><i class="fa fa-file-text-o"></i> Ship List</h3>
                         <ol class="breadcrumb">
                             <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
                             <li><i class="icon_document_alt"></i>Shipping</li>
@@ -56,22 +56,22 @@
                                     </tr>
                             </thead>
                             <tbody>
-                                <c:forEach items="${products}" var="prod">
+                                <c:forEach items="${shipList}" var="ship">
                                     <tr>
-                                        <td><c:out value="${prod.cusName}" /></td>
-                                        <td><c:out value="${prod.orderID}" /></td>
-                                        <td><c:out value="${prod.orderDate}" /></td>
-                                        <td><c:out value="${prod.shipDate}" /></td>
-                                        <td><c:out value="${prod.orderQuan}" /></td>
-                                        <td><c:out value="${prod.unitPrice}" /></td>
-                                        <td><c:out value="${prod.shipCost}" /></td>
-                                        <td><c:out value="${prod.sale}" /></td>
-                                        <td><c:out value="${prod.province}" /></td>
+                                        <td><c:out value="${ship.cusName}" /></td>
+                                        <td><c:out value="${ship.orderID}" /></td>
+                                        <td><c:out value="${ship.orderDate}" /></td>
+                                        <td><c:out value="${ship.shipDate}" /></td>
+                                        <td><c:out value="${ship.orderQuan}" /></td>
+                                        <td><c:out value="${ship.unitPrice}" /></td>
+                                        <td><c:out value="${ship.shipCost}" /></td>
+                                        <td><c:out value="${ship.sale}" /></td>
+                                        <td><c:out value="${ship.province}" /></td>
                      
                                         <td>
                                             <div class="btn-group">
-                                                <a class="btn btn-success" href="ProductController?action=edit&prodId=<c:out value="${prod.rowID}"/>"><i class="icon_check_alt2"></i></a>
-                                                <a class="btn btn-danger" href="ProductController?action=delete&prodId=<c:out value="${prod.rowID}"/>"><i class="icon_close_alt2"></i></a>
+                                                <a class="btn btn-success" href="ProductController?action=edit&prodId=<c:out value="${ship.orderID}"/>"><i class="icon_check_alt2"></i></a>
+                                                <a class="btn btn-danger" href="ProductController?action=delete&prodId=<c:out value="${ship.orderID}"/>"><i class="icon_close_alt2"></i></a>
                                             </div>
                                         </td>
                                     </tr>

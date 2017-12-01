@@ -68,18 +68,16 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <c:forEach items="${users}" var="user">
+                                <c:forEach items="${users}" var="User">
                                     <tr>
-                                        <td><c:out value="${user.id}" /></td>
+                                        <td><c:out value="${User.id}" /></td>
                                     <td><c:out value="${user.name}" /></td>
                                     <td><c:out value="${user.email}" /></td>
                                     <td><c:out value="${user.type}" /></td>
                                     <td>
                                         <div class="btn-group">
-                                            <a class="btn btn-success" href="UserController?action=edit&userId=<c:out value='${user.id}'/>"><i class="icon_check_alt2"></i></a>
-                                            <a class="btn btn-danger" href="UserController?action=delete&userId=<c:out value='${user.id}'/>"><i class="icon_close_alt2"></i></a>
-                                            
-        
+                                            <a class="btn btn-success" href="UserController?action=edit&userId=<c:out value="${user.id}"/>"><i class="icon_check_alt2"></i></a>
+                                            <a class="btn btn-danger" href="UserController?action=delete&userId=<c:out value="${user.id}"/>"><i class="icon_close_alt2"></i></a>
                                         </div>
                                     </td>
                                     </tr>

@@ -19,7 +19,7 @@
         <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
         <link rel="shortcut icon" href="img/favicon.png">
 
-        <title>Form Component | Creative - Bootstrap 3 Responsive Admin Template</title>
+        <title>Products</title>
 
         <jsp:include page="./common/cssSection.jsp"/>
     </head>
@@ -31,7 +31,7 @@
         <section class="wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header"><i class="fa fa-file-text-o"></i> Form elements</h3>
+                    <h3 class="page-header"><i class="fa fa-file-text-o"></i> Products List</h3>
                     <ol class="breadcrumb">
                         <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
                         <li><i class="icon_document_alt"></i>Product</li>
@@ -62,11 +62,12 @@
                                         <td><c:out value="${prod.subProdCat}" /></td>
                                         <td><c:out value="${prod.prodName}" /></td>
                                         <td><c:out value="${prod.unitPrice}" /></td>
-                                        <td><img src="<c:out value="${prod.unitPrice}" />"></td>
+                                        <td><img class="prodImg" src="<c:out value="${prod.img}" />"></td>
                                         <td>
                                             <div class="btn-group">
-                                                <a class="btn btn-success" href="ProductController?action=edit&prodId=<c:out value="${prod.rowID}"/>"><i class="icon_check_alt2"></i></a>
-                                                <a class="btn btn-danger" href="ProductController?action=delete&prodId=<c:out value="${prod.rowID}"/>"><i class="icon_close_alt2"></i></a>
+                                                <a class="btn btn-primary" href="Home?action=edit&prodId=<c:out value="${prod.rowID}"/>"><i class="icon_check_alt2"></i></a>
+                                                <a class="btn btn-success" href="#"><i class="icon_circle-empty"></i></a>
+                                                <a class="btn btn-danger" href="Home?action=delete&prodId=<c:out value="${prod.rowID}"/>"><i class="icon_close_alt2"></i></a>
                                             </div>
                                         </td>
                                     </tr>

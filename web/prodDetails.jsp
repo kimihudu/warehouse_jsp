@@ -18,7 +18,7 @@
         <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
         <link rel="shortcut icon" href="img/favicon.png">
 
-        <title>Form Component | Creative - Bootstrap 3 Responsive Admin Template</title>
+        <title>Product Details</title>
         <jsp:include page="./common/cssSection.jsp"/>
     </head>
     <body>
@@ -28,7 +28,7 @@
             <section class="wrapper">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h3 class="page-header"><i class="fa fa-file-text-o"></i> Form elements</h3>
+                        <h3 class="page-header"><i class="fa fa-file-text-o"></i> Product Details</h3>
                         <ol class="breadcrumb">
                             <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
                             <li><i class="icon_document_alt"></i>Product</li>
