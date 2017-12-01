@@ -24,7 +24,7 @@ import model.User;
 
 public class UserController extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private static String INSERT_OR_EDIT = "/user.jsp";
+    private static String INSERT_OR_EDIT = "/userDetails.jsp";
     private static String LIST_USER = "/listUser.jsp";
     private UserDao dao;
 
@@ -47,7 +47,7 @@ public class UserController extends HttpServlet {
             String userId = request.getParameter("userId");
             User user = dao.getUserById(userId);
             request.setAttribute("user", user);
-        } else if (action.equalsIgnoreCase("listUser")){
+        } else if (action.equalsIgnoreCase("userList")){
             forward = LIST_USER;
             request.setAttribute("users", dao.getAllUsers());
         } else {

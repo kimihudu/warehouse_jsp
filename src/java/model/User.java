@@ -15,7 +15,6 @@ public class User {
     private String name;
     private String email;
     private String type;
-    
     private String id;
 
     public String getId() {
@@ -52,7 +51,7 @@ public class User {
     
      @Override
     public String toString() {
-        return "User [userid=" + id + ", name=" + name
+        return "User [id=" + id + ", name=" + name
                 + ", email=" + email + ", type=" + type + "]";
     } 
     

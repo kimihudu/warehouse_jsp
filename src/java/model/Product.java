@@ -24,6 +24,15 @@ public class Product {
     private String subProdCat;
     private String prodName;
     private String shipDate;
+    private String img;
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
 
     public String getRowID() {
         return rowID;

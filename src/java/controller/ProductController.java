@@ -85,9 +85,9 @@ public class ProductController extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Product prod = new Product();
-        user.setName(request.getParameter("name"));
-        user.setType(request.getParameter("type"));
-        user.setEmail(request.getParameter("email"));
+//        user.setName(request.getParameter("name"));
+//        user.setType(request.getParameter("type"));
+//        user.setEmail(request.getParameter("email"));
         String prodID = request.getParameter("id");
         if (prodID == null || prodID.isEmpty()) {
             dao.addProd(prod);

@@ -112,17 +112,18 @@ public class ProdDao {
                 prod.setRowID(rs.getString("RowID"));
                 prod.setOrderID(rs.getString("OrderID"));
                 prod.setOrderDate(rs.getString("OrderDate"));
-                prod.setOrderPrior(rs.getString("OrderPriority"));
-                prod.setOrderQuan(rs.getString("OrderQuantity"));
-                prod.setSale(rs.getString("Sales"));
+                prod.setOrderPrior(rs.getString("orderPrior"));
+                prod.setOrderQuan(rs.getString("orderQuan"));
+                prod.setSale(rs.getString("Sale"));
                 prod.setUnitPrice(rs.getString("UnitPrice"));
-                prod.setShipCost(rs.getString("ShippingCost"));
-                prod.setCusName(rs.getString("CustomerName"));
+                prod.setShipCost(rs.getString("shipCost"));
+                prod.setCusName(rs.getString("cusName"));
                 prod.setProvince(rs.getString("Province"));
-                prod.setProdCat(rs.getString("ProductCategory"));
-                prod.setSubProdCat(rs.getString("ProductSubCategory"));
-                prod.setProdName(rs.getString("ProductName"));
+                prod.setProdCat(rs.getString("prodCat"));
+                prod.setSubProdCat(rs.getString("subProdCat"));
+                prod.setProdName(rs.getString("prodName"));
                 prod.setShipDate(rs.getString("ShipDate"));
+                prod.setImg(rs.getString("Imgs"));
                 prods.add(prod);
             }
         } catch (SQLException e) {

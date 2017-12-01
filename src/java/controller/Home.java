@@ -20,16 +20,18 @@ import model.Product;
  * @author GeorgyGeo
  */
 public class Home extends HttpServlet {
- private static final long serialVersionUID = 1L;
-    private static String INSERT_OR_EDIT = "/prodDetail.jsp";
+
+    private static final long serialVersionUID = 1L;
+    private static String INSERT_OR_EDIT = "/prodDetails.jsp";
     private static String LIST_PROD = "/prodList.jsp";
+    private static String LIST_SHIP = "/shipList.jsp";
+    private static String INSERT_EDIT_SHIP = "/shipDetails.jsp";
     private ProdDao dao;
 
     public Home() {
         super();
         dao = new ProdDao();
     }
-
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String forward = "";
@@ -45,9 +47,18 @@ public class Home extends HttpServlet {
             String prodID = request.getParameter("proID");
             Product prod = dao.getProductById(prodID);
             request.setAttribute("product", prod);
-        } else if (action.equalsIgnoreCase("prodList")) {
+        }else if (action.equalsIgnoreCase("editShip")) {
+            forward = INSERT_EDIT_SHIP;
+            String prodID = request.getParameter("proID");
+            Product prod = dao.getProductById(prodID);
+            request.setAttribute("product", prod);
+        } 
+        else if (action.equalsIgnoreCase("prodList")) {
             forward = LIST_PROD;
             request.setAttribute("products", dao.getAllProds());
+        } else if (action.equalsIgnoreCase("shipList")) {
+            forward = LIST_SHIP;
+            request.setAttribute("shipList", dao.getAllProds());
         } else {
             forward = INSERT_OR_EDIT;
         }

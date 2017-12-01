@@ -34,7 +34,7 @@
                 </a>
                 <ul class="sub">
                     <li><a class="" href="./Home?action=shipList">Shipping List</a></li>
-                    <li><a class="" href="./Home?action=edit">Shipping Detail</a></li>
+                    <li><a class="" href="./Home?action=editShip">Shipping Detail</a></li>
                     <!-- <li><a class="" href="grids.html">Grids</a></li> -->
                 </ul>
             </li> 
@@ -45,9 +45,9 @@
                     <span class="menu-arrow arrow_carrot-right"></span>
                 </a>
                 <ul class="sub">                          
-                    <li><a class="" href="./UserController?action=userList">Profile</a></li>
+                    <li><a class="" href="./UserController?action=userList">List Users</a></li>
                     <!--<li><a class="" href="./UserController?action="><span>Login Page</span></a></li>-->
-                    <li><a class="" href="./UserController?action=edit">Add New</a></li>
+                    <li><a class="" href="./UserController?action=edit">Add New User</a></li>
                     <!--<li><a class="" href="404.html">404 Error</a></li> -->
                 </ul>
             </li>
